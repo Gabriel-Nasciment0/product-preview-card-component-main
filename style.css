@@ -92,6 +92,9 @@ h1 {
     text-align: center;
     text-decoration: none;
 }
+.button:hover {
+    background-color: darkgreen;
+}
 /* carrinho */
 span {
     width: 40px;
