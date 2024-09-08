@@ -1,0 +1,171 @@
+/* regras de Html */
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+/* Regras da pagina */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* pagina */
+body,
+html {
+    background-color: bisque;
+    width: 100%;
+    height: 100%;
+    main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            background: white;
+            width: 350px;
+            height: 650px;
+            border-radius: 20px;
+            .img {
+                background: url(images/image-product-desktop.jpg) no-repeat
+                    center 20%;
+                background-size: cover;
+                width: 100%;
+                height: 40%;
+                border-radius: 20px 20px 0 0;
+            } //img
+            .produto {
+                width: 100%;
+                height: 50%;
+                padding: 0 20px;
+                h1 {
+                    font-size: 30px;
+                }
+                > p {
+                    font-size: 17px;
+                    padding: 15px 0;
+                    line-height: 30px;
+                } //p
+                .preço {
+                    display: flex;
+                    justify-content: space-evenly;
+                    p:first-child {
+                        font-size: 30px;
+                        font-weight: bolder;
+                        color: green;
+                    } //first
+                    p:last-child {
+                        font-size: 16px;
+                        padding-top: 8px;
+                        text-decoration: line-through;
+                    } //last
+                } //preço
+                button {
+                    width: 99%;
+                    padding: 10px 0;
+                    margin-top: 20px;
+                    text-align: center;
+                    background: green;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    span {
+                        display: inline-block;
+                        color: white;
+                    }
+                    a {
+                        display: inline-block;
+                        color: white;
+
+                        text-decoration: none;
+                    } //a
+                } //button
+                button:hover {
+                    background: darkgreen;
+                }
+            } //produto
+        } //container
+    } //main
+} //body html
+
+@media screen and (min-width: 1000px) {
+    body,
+    html {
+        background-color: bisque;
+        width: 100%;
+        height: 100%;
+        main {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            .container {
+                display: flex;
+                background: white;
+                width: 850px;
+                height: 600px;
+                border-radius: 20px;
+                .img {
+                    background: url(images/image-product-desktop.jpg) no-repeat
+                        center 20%;
+                    background-size: cover;
+                    width: 50%;
+                    height: 100%;
+                    border-radius: 20px 0 0 20px;
+                } //img
+                .produto {
+                    width: 50%;
+                    height: 100%;
+                    padding: 0 30px;
+                    h1 {
+                        font-size: 45px;
+                    }
+                    > p {
+                        font-size: 20px;
+                        padding: 20px 0;
+                        line-height: 40px;
+                    } //p
+                    .preço {
+                        display: flex;
+                        justify-content: space-evenly;
+                        padding-top: 20px;
+                        p:first-child {
+                            font-size: 40px;
+                            font-weight: bolder;
+                            color: green;
+                        } //first
+                        p:last-child {
+                            font-size: 20px;
+                            padding-top: 12px;
+                            text-decoration: line-through;
+                        } //last
+                    } //preço
+                    button {
+                        width: 99%;
+                        padding: 10px 0;
+                        margin-top: 50px;
+                        text-align: center;
+                        background: green;
+                        border: none;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        span {
+                            display: inline-block;
+                            color: white;
+                        }
+                        a {
+                            display: inline-block;
+                            color: white;
+
+                            text-decoration: none;
+                        } //a
+                    } //button
+                    button:hover {
+                        background: darkgreen;
+                    }
+                } //produto
+            } //container
+        } //main
+    } //body html
+}

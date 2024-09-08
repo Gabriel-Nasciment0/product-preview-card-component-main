@@ -1,80 +1,192 @@
+@charset "UTF-8";
 /* regras de Html */
-@charset "utf-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
-
 /* Regras da pagina */
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
+
 /* pagina */
 body,
 html {
-    width: 100vw;
-    height: 100vh;
+  background-color: bisque;
+  width: 100%;
+  height: 100%;
 }
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+body main,
+html main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .container,
+html main .container {
+  background: white;
+  width: 350px;
+  height: 650px;
+  border-radius: 20px;
+}
+body main .container .img,
+html main .container .img {
+  background: url(images/image-product-desktop.jpg) no-repeat center 20%;
+  background-size: cover;
+  width: 100%;
+  height: 40%;
+  border-radius: 20px 20px 0 0;
+}
+body main .container .produto,
+html main .container .produto {
+  width: 100%;
+  height: 50%;
+  padding: 0 20px;
+}
+body main .container .produto h1,
+html main .container .produto h1 {
+  font-size: 30px;
+}
+body main .container .produto > p,
+html main .container .produto > p {
+  font-size: 17px;
+  padding: 15px 0;
+  line-height: 30px;
+}
+body main .container .produto .preço,
+html main .container .produto .preço {
+  display: flex;
+  justify-content: space-evenly;
+}
+body main .container .produto .preço p:first-child,
+html main .container .produto .preço p:first-child {
+  font-size: 30px;
+  font-weight: bolder;
+  color: green;
+}
+body main .container .produto .preço p:last-child,
+html main .container .produto .preço p:last-child {
+  font-size: 16px;
+  padding-top: 8px;
+  text-decoration: line-through;
+}
+body main .container .produto button,
+html main .container .produto button {
+  width: 99%;
+  padding: 10px 0;
+  margin-top: 20px;
+  text-align: center;
+  background: green;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+body main .container .produto button span,
+html main .container .produto button span {
+  display: inline-block;
+  color: white;
+}
+body main .container .produto button a,
+html main .container .produto button a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+body main .container .produto button:hover,
+html main .container .produto button:hover {
+  background: darkgreen;
+}
+
+@media screen and (min-width: 1000px) {
+  body,
+  html {
+    background-color: bisque;
     width: 100%;
     height: 100%;
-    background: wheat;
-}
-.img {
-    background: url(images/image-product-mobile.jpg) no-repeat center center;
-    background-size: cover;
-    width: 270px;
-    height: 200px;
-    border-radius: 10px 10px 0px 0px;
-}
-.conteudo {
-    width: 270px;
-    height: 250px;
-    background: white;
-    padding: 10px 20px;
-}
-.conteudo > p {
-    padding-bottom: 10px;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.4);
-    font-family: "Roboto", sans-serif;
-}
-.conteudo > h1 {
-    padding-bottom: 10px;
-    font-family: "Raleway", sans-serif;
-}
-.preco {
-    display: inline-block;
-}
-.numero:first-child {
-    float: left;
-    padding-right: 5px;
-    font-size: 20px;
-    font-weight: bolder;
-    color: green;
-}
-.numero:last-child {
-    float: left;
-    padding-left: 5px;
-    font-size: 10px;
-    padding-top: 4px;
-    color: rgba(0, 0, 0, 0.5);
-    text-decoration: line-through;
-}
-.campo {
+  }
+  body main,
+  html main {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+  body main .container,
+  html main .container {
+    display: flex;
+    background: white;
+    width: 850px;
+    height: 600px;
+    border-radius: 20px;
+  }
+  body main .container .img,
+  html main .container .img {
+    background: url(images/image-product-desktop.jpg) no-repeat center 20%;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+  }
+  body main .container .produto,
+  html main .container .produto {
+    width: 50%;
+    height: 100%;
+    padding: 0 30px;
+  }
+  body main .container .produto h1,
+  html main .container .produto h1 {
+    font-size: 45px;
+  }
+  body main .container .produto > p,
+  html main .container .produto > p {
+    font-size: 20px;
+    padding: 20px 0;
+    line-height: 40px;
+  }
+  body main .container .produto .preço,
+  html main .container .produto .preço {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+  }
+  body main .container .produto .preço p:first-child,
+  html main .container .produto .preço p:first-child {
+    font-size: 40px;
+    font-weight: bolder;
+    color: green;
+  }
+  body main .container .produto .preço p:last-child,
+  html main .container .produto .preço p:last-child {
+    font-size: 20px;
+    padding-top: 12px;
+    text-decoration: line-through;
+  }
+  body main .container .produto button,
+  html main .container .produto button {
+    width: 99%;
+    padding: 10px 0;
+    margin-top: 50px;
+    text-align: center;
     background: green;
+    border: none;
     border-radius: 10px;
-    padding: 5px;
-}
-.button {
+    cursor: pointer;
+  }
+  body main .container .produto button span,
+  html main .container .produto button span {
+    display: inline-block;
+    color: white;
+  }
+  body main .container .produto button a,
+  html main .container .produto button a {
+    display: inline-block;
     color: white;
     text-decoration: none;
-}
-.material-symbols-outlined {
-    vertical-align: -5px;
-}
+  }
+  body main .container .produto button:hover,
+  html main .container .produto button:hover {
+    background: darkgreen;
+  }
+}/*# sourceMappingURL=style.css.map */
